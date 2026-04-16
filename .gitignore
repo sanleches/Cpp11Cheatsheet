@@ -44,4 +44,5 @@
 .vscode/
 
 #CMake build folders
-Essential C ++/build/*
+#Essential C ++/build/
+**/build/*
