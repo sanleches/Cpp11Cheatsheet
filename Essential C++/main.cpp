@@ -1,6 +1,7 @@
 // Essential C++ Sample Implementation
 // Main entry point and menu
 #include <iostream>
+#include "config.h"
 #include "Chapter01_BasicProgramming/chapter01.h"
 #include "Chapter02_ProceduralProgramming/chapter02.h"
 #include "Chapter03_GenericProgramming/chapter03.h"
@@ -23,6 +24,14 @@ void printMenu() {
 
 int main() {
     int choice = -1;
+    std::cout << "\nWelcome to Essential C++ Sample Implementation!\n\n";
+    std::cout << "---------------------------------------------\n";
+    std::cout << "This project has been built referencing all the chapters from Essential C++. by Stanley B.Lippman - 2002\n";
+    std::cout << "Hovever it has been implemented using c11 and up.\n";
+    std::cout << "---------------------------------------------\n";
+    std::cout << "Version: " << PROJECT_VERSION << "\n";
+    std::cout << "Author: Santiago Ugarte.\n";
+    
     do {
         printMenu();
         std::cout << "Select a chapter: ";

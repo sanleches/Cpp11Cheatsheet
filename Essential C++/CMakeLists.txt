@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.28)
 
-project(EssentialCpp)
+project(EssentialCpp VERSION 1.0)
 
-add_executable(EssentialCpp)
+add_executable(EssentialCpp main.cpp)
 
 target_sources(EssentialCpp
     PRIVATE
@@ -15,3 +15,7 @@ target_sources(EssentialCpp
         Chapter06_ProgrammingWithTemplates/chapter06.cpp
         Chapter07_ExceptionHandling/chapter07.cpp
 )
+
+configure_file(config.h.in config.h)
+
+include_directories(${CMAKE_CURRENT_BINARY_DIR})
