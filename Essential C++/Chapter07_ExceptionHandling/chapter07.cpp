@@ -89,7 +89,7 @@ void demoStandardExceptions() {
     try {
         // Try to access the second character of an empty string.
         // This will throw an out_of_range exception.
-        std::string().at(1);
+        (void)std::string().at(1);
     } catch (const std::out_of_range& e) {
         // Catch the out_of_range exception and print its message.
         std::cout << "Caught out_of_range: " << e.what() << std::endl;
